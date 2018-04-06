@@ -1,132 +1,143 @@
-/*------------------------------ body ------------------------------*/
-body{			
-font-family: helvetica,arial,arial black;
-margin: 0px;
-background-color: #00a88e;
+html{
+	position: relative;
+	min-height: 100%;
 	}
 
+/*------------------------------ body ------------------------------*/
+body{			
+font-family: helvetica,arial;
+margin: 0px;
+background-color:#99be8f;
+	}
+
+@font-face {
+font-family: myFirstFont;
+src: url(calibri_light.woff);
+	}
+	
 a{
 	text-decoration: none;
-}
+	}
+
 li{
 	list-style: none;
 	display: inline;
-}
+	}
 
+/*------ for the footer to stick at bottom ------*/		
+.container{
+	margin: 0px;
+	}
+/*---------- Navigation  ------------------------*/
+.headers{
+	background-color: #faf2dc;
+	height: 67px;
+	font-family: helvetica;
+	top:0px;
+	}
+/*----------CONTAINER OF NAVIGATION	-----------*/
+.concon{
+	padding-top:50px;
+	}
+
+.conav {
+	text-align:center;
+	padding-top:3px;
+	}
+	
+.headers a{
+	color:#fd751e;
+	}	
+	
+.headers a:hover{
+	color: #69ba5e;
+    text-decoration: underline;
+    }
+	
+.headers li{
+	padding-right: 70px;
+    font-size: 15px;
+	}
+
+.content{
+	margin: 0px;
+	height: 500px;
+	overflow:auto;
+	padding-left:100px;
+	padding-right:100px;
+	}
 		
-#container{
-	margin: 0px;
-		}
-
-
-#headers{
-	background-color: #ece8c4;
-	height: 111px;
-		}
-
-
-#content{
-	margin: 0px;
-	height: 522px;
-		}
-
-
-#content img.mypic{
+.mypic{
 	float: right;
-	padding-top: 49px;
-	padding-bottom: 44px;
-	padding-right: 60px;
-		}
+	height: 300px;
+	width: 300px;
+	}
 
-#content h1{
-	padding-left: 78px;
-	float: left;
-	padding-right: 300px;
-		}
+.content h1{
+	font-size:35px;
+	margin:0px;
+	}
 
-#content p{
-	padding-left:78px; 
-	font-size: 21px;
+.content p{ 
+	font-size: 17px;
 	color:#1e291d;
 	text-align: justify;
 	width: 614px;
-	clear: inherit;
+	}
 	
-		}
-
-nav{
-	text-align:center;
-	font-family: helvetica;
-	padding-top: 45px;
-	float: center;
-		}
-
-nav ul {
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-
-   		}
-
-nav a{
-    text-decoration: none;
-    color: #223b1e;
-    padding-right: 50px;
-    font-size: 25px;
-		}
-
-nav a:hover{
-	color: #69ba5e;
-		}
-
-nav li{ 
-	display: inline;
-		}
-
-
-
-
-
-
 /*------------------------------ footer ------------------------------*/
-#footer{
-	background-color: #efefe8;
-	height: 185px;
-	border-spacing: 0px;
-	margin: 0px;
-			
-		}
+.footer{
+	
+	background-color: #4e8064;
+	min-height:40%;
+	position:relative;
+	text-align:center;
+	}
+		
+.footernav{
+	vertical-align: top;
+    display: inline-block;
+    text-align: center;/* To horizontally center images and caption */				
+    width: 100px; /* The width of the container also implies margin around the images. */
+	padding-right:150px;
+	padding-top:70px;
+	}
+	
+.footernav a{
+	color:#d47a41;
+	}
+	
+.cap{
+	display:block;
+	padding-top:5px;
+	}
+	
+.footernav img{
+	width: 70x;
+    height: 75px
+	}
+	
+.consub{
+	padding-left:400px;
+	}
+	
+.subfooter{
+	padding-top:10px;
+	background-color:#262d2e;
+	bottom:0;
+	width:100%;
+	height:40px;   /* Height of the footer */
+	position:absolute;
+	}
+	
+.subfooter img{
+	width:30px;
+	height:30px;
+	text-align:center;
 
-#footernav{
-	text-align: center;
-		}
+	}
 
-#footernav {
-	padding-left: 120px;
-	padding-top: 30px;
-		}
+.all{
+	color:gray;
 
-#footernav img.profile {
-	padding-left: 216px;
-}
-.code{
-	padding-left: 200px;
-}
-
-
-#footernavtwo li.profile{
-	padding-left: 227px;
-		}
-#footernavtwo li.code{
-	padding-left: 290px;
-		}
-#footernavtwo li.mydesign{
-	padding-left: 271px;
-		}
-
-#subfooter{
-	background-color: #4e4e4e;
-	height: 49px;
-	margin: 0px;
-	margin-bottom: 0px;
-		}
+	}
